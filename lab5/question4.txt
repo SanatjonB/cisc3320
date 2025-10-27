@@ -1,0 +1,11 @@
+4) Simulate a deadlock scenario by creating three threads, each trying to lock three mutexes (shared resources) in a circular order.
+Deadlocks often occur when multiple threads hold a resource and wait for another one that is already held by someone else. This example demonstrates circular wait, one of the Coffman deadlock conditions.
+Instructions:
+a) Write a C++ program that:
+1.	Defines three mutexes: resourceA, resourceB, and resourceC.
+2.	Creates three threads:
+o	Thread 1: locks resourceA, then waits for resourceB
+o	Thread 2: locks resourceB, then waits for resourceC
+o	Thread 3: locks resourceC, then waits for resourceA
+3.	Adds a small delay (sleep_for) between acquiring the first and second lock to simulate work and increase deadlock likelihood.
+b) Rewrite the same program that resolves the deadlock.
