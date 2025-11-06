@@ -1,0 +1,7 @@
+1-	Snack Producer and Consumer
+
+Implement Snack Producer and Consumer using the following info:
+•	A SnackProducer puts snacks in a shared basket (buffer).
+•	A SnackConsumer takes snacks from the basket.
+•	Basket can hold 3 snacks at most.
+•	Use counting semaphores to manage empty/full slots and a binary semaphore for mutual exclusion.
